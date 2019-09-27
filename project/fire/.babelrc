@@ -1,0 +1,26 @@
+{
+    "presets": [
+        [
+            "@babel/env",
+            {
+                "targets": {
+                    "chrome": 52,
+                    "browsers": [
+                        "last 2 versions",
+                        "safari 7"
+                    ]
+                }
+            }
+        ],
+        "@babel/react"
+    ],
+    "plugins": [
+        "@babel/plugin-proposal-function-bind",
+        [
+            "@babel/transform-runtime",
+            {
+                "helpers": false
+            }
+        ]
+    ]
+}
