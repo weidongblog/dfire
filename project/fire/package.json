@@ -1,7 +1,7 @@
 {
-  "name": "fire",
+  "name": "__projectName__",
   "version": "1.0.0",
-  "description": "站在巨人肩膀上的雏鹰",
+  "description": "__projectDesc__",
   "main": "index.js",
   "scripts": {
     "server": "cross-env NODE_ENV=development dev=true webpack-dev-server --hot --color",

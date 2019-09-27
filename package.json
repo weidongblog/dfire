@@ -1,7 +1,7 @@
 {
   "name": "dfire",
   "version": "1.0.0",
-  "description": "",
+  "description": "工具",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,9 +13,12 @@
     "url": "https://github.com/weidongblog/dfire.git"
   },
   "dependencies": {
-    "commander": "^3.0.2"
+    "commander": "^3.0.2",
+    "gulp": "^4.0.2",
+    "gulp-replace": "^1.0.0",
+    "log": "^6.0.0"
   },
   "bin": {
-    "dfire": "./bin/fire.js"
+    "dfire": "./bin/dfire.js"
   }
 }
