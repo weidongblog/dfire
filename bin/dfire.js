@@ -3,6 +3,7 @@ const program = require('commander');
 const path = require('path');
 const gulp = require("gulp");
 const replace = require('gulp-replace');
+const pkg = require("../package.json");
 
 /**
  * 创建项目
@@ -10,7 +11,7 @@ const replace = require('gulp-replace');
  */
 var createProject = function (value) {
     if (!value || typeof value !== "string" || !value.split("/")[1]) {
-        console.log("命令有误，格式：dfire c|create 项目名/[项目描述]");
+        console.log("命令有误，格式：dfire c|create 项目名/项目描述");
         return;
     }
     console.log("生成项目...");
@@ -36,6 +37,12 @@ program
     .description('创建项目')
     .action(function (value) {
         createProject(value);
+    });
+
+program
+    .command("version")
+    .alias('v').action(function () {
+        console.log(pkg.version);
     });
 
 program.parse(process.argv)
