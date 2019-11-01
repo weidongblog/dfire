@@ -10,10 +10,6 @@
     "fire:prod": "cross-env NODE_ENV=production node fire build fire-env=prod fire-hot"
   },
   "author": "wdong",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/weidongblog/fire.git"
-  },
   "devDependencies": {
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.6.0",
