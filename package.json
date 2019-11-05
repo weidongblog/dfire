@@ -10,8 +10,9 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/weidongblog/dfire.git"
+    "url": "git+https://github.com/weidongblog/dfire.git"
   },
+  "homepage": "https://github.com/weidongblog/dfire.git",
   "dependencies": {
     "commander": "^3.0.2",
     "gulp": "^4.0.2",
